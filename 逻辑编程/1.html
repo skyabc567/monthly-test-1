@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function replace(a,b,c) {
+        if(a && b) {
+            return a.split(b).join(c);
+        }
+        return a;
+    }
+    var a = "hello world";
+    var b = "world";
+    var c = "javascript"
+    var res = replace(a ,b, c);
+    console.log(res);
+</script>
+</html>

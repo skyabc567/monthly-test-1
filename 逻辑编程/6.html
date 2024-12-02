@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function toUnique(arr) {
+        var arr1 = [];
+        for(var i = 0; i < arr.length; i++) {
+            var isrepeated = false;
+            for(var j = 0; j < arr1.length; j++) {
+                if(arr[i] == arr[j]) {
+                    isrepeated = true;
+                    break;
+                }
+            }
+            if(!isrepeated) {
+                arr1.push(arr[i]);
+            }
+        }
+        console.log(arr1);
+        return arr1;
+    }
+    toUnique([1,2,2,3,4,3])
+</script>
+</html>

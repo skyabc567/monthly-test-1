@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function findSecondLargest(array) {
+        var a = array[0];
+        var b = array[1];
+        if(a > b) {
+            var temp = a;
+            a = b;
+            b = temp;
+        }
+        for(var i = 2; i < array.length; i++) {
+            if(array[i] > a) {
+                b = a;
+                a = array[i];
+            } else if(array[i] < a && array[i] > b) {
+                b = array[i];
+            } else {
+                b = null;
+            }
+        }
+        console.log(b);
+        return b;
+    }        
+        findSecondLargest([1,2,2,2])
+</script>
+</html>
