@@ -9,6 +9,30 @@
     
 </body>
 <script>
-    
+    // 2. 【验证字符串是否为有效的括号序列】编写⼀个函数，接收⼀个只包含字符  '(', ')', 
+    // '{', '}', '['  和  ']'  的字符串，判断字符串是否是⼀个有效的括号序列。
+    function bracket(string) {
+        if(string.length % 2 !==0) {
+            return false;
+        }
+        var object = {'(':')', '[':']', '{':'}'};
+        var arr = [];
+        for(var i = 0; i < string.length; i++) {
+            if(string[i] == "(" || string[i] == "{" || string[i] == "[") {
+                arr.push(object[string[i]]);
+            } else {
+                if(arr.length == 0) {
+                    return false;
+                } else {
+                    var a = arr.pop();
+                    if(a != string[i]) {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
+    console.log(bracket("({[]})"))
 </script>
 </html>

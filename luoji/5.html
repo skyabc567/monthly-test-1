@@ -9,6 +9,20 @@
     
 </body>
 <script>
-    
+    // 5. 【数组元素的频次统计】编写⼀个函数，接收⼀个数组作为输⼊，并返回⼀个对象，该对象的
+    // 键是数组中的元素，值是该元素在数组中出现的频次。
+    function frequency(arr) {
+        var msg = {};
+        for(var i = 0; i < arr.length; i++) {
+            var object = arr[i];
+            if(msg[object]) {
+                msg[object]++;
+            } else {
+                msg[object] = 1;
+            }
+        }
+        return msg;
+    }
+    console.log(frequency([1, 1, 2, 3, 5, 2, 1,6, 6]))
 </script>
 </html>

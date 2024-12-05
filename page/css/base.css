@@ -24,3 +24,94 @@ input {
     outline: none;
     border: 1px solid #000;
 }
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    body .top-nav .top-nav-center {
+        width: 930px;
+    }
+    body .banner-center {
+        width: 930px;
+    }
+    body .banner-center .banner-title h2 {
+        font-size: 64px;
+    }
+    body .feature {
+        width: 930px;
+    }
+    body .hero .container {
+        width: 930px;
+    }
+    body .container-nav {
+        width: 930px;
+    }
+    body .container-nav ul {
+        width: 930px;
+    }
+    body .bottom {
+        width: 930px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    body .top-nav .top-nav-center2 {
+        display: block;
+    }
+    body .top-nav .top-nav-center {
+        display: none;
+    }
+    body .banner-center {
+        width: 690px;
+    }
+    body .banner-center .banner-title h2 {
+        font-size: 59px;
+    }
+    body .banner-center .banner-nav ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 589px) {
+    body .top-nav .top-nav-center2 {
+        width: 510px;
+        display: block;
+    }
+    body .top-nav .top-nav-center2 ul {
+        width: 510px;
+    }
+    body .top-nav .top-nav-center {
+        display: none;
+    }
+    body .banner-center {
+        width: 510px;
+    }
+    body .banner-center .banner-title h2 {
+        font-size: 45px;
+    }
+    body .banner-center .banner-nav ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 589px) {
+    body .top-nav .top-nav-center2 {
+        width: 80%;
+        display: block;
+    }
+    body .top-nav .top-nav-center2 ul {
+        width: 80%;
+    }
+    body .top-nav .top-nav-center {
+        display: none;
+    }
+    body .banner-center {
+        width: 90%;
+    }
+    body .banner-center .banner-title h2 {
+        font-size: 40px;
+    }
+    body .banner-center .banner-nav ul {
+        display: none;
+    }
+}
+
+
